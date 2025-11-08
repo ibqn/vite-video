@@ -46,7 +46,7 @@ export const VideoPlayer = ({ options, onReady }: VideoPlayerProps) => {
       player.autoplay(options.autoplay)
       player.src(options.sources)
     }
-  }, [options, videoRef])
+  }, [options, videoRef, mergedOptions, onReady])
 
   useEffect(() => {
     const player = playerRef.current
