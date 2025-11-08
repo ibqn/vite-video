@@ -6,7 +6,7 @@ import 'video.js/dist/video-js.css'
 type VideoPlayerOptions = Parameters<typeof videojs>[1]
 type VideoPlayer = ReturnType<typeof videojs>
 
-interface VideoPlayerProps {
+type VideoPlayerProps = {
   options: VideoPlayerOptions
   onReady?: (player: VideoPlayer) => void
 }
